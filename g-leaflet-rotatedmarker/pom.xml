@@ -178,17 +178,4 @@
 		</repository>
 	</repositories>
 
-    <distributionManagement>
-        <repository>
-            <id>nexusDeployment</id>
-            <name>Internal Releases</name>
-            <url>http://162.70.134.70:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexusDeployment</id>
-            <name>Internal Snapshots</name>
-            <url>http://162.70.134.70:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
 </project>
