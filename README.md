@@ -28,10 +28,11 @@ Option | Type | Default | Description
 
 and two new methods:
 
-Method | Returns | Description
--------|---------|------------
-**`setRotationAngle(newAngle)`** | `void` | Sets the rotation angle value.
-**`setRotationOrigin(newOrigin)`** | `void` | Sets the rotation origin value.
+Method |Default value|Parameter Type| Returns | Description
+-------|-------------|--------------|---------|------------
+**`setRotationAngle(newAngle)`** |0.0| `Double`| `void` | Sets the rotation angle value in degrees, clockwise
+**`setRotationOrigin(newOrigin)`** | `"bottom center"` | `String`| `void` | Sets the rotation origin value, as a [`transform-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin) CSS rule.
+
 
 The default `rotationOrigin` value will rotate around the bottom center point, corresponding to the "tip" of the marker for most commonly used icons. If your marker icon has no tip, or you want to rotate around its center, use `center center`.
 
