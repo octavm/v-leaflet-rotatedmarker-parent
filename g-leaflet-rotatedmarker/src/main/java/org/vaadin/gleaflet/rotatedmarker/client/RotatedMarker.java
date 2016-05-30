@@ -16,7 +16,7 @@ public class RotatedMarker extends Marker {
 	
 	protected RotatedMarker() {}
 
-	public static native RotatedMarker create(LatLng latlng, MarkerOptions options)
+	public static native RotatedMarker create(LatLng latlng, RotatedMarkerOptions options)
 	/*-{
 		return new $wnd.L.Marker(latlng, options);
 	}-*/;

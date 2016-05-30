@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addons</groupId>
     <artifactId>v-leaflet-rotatedmarker</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>V-Leaflet Rotatedmarker extensions</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <vaadin.version>7.3.6</vaadin.version>
         <v-leaflet-version>1.0.0-b5</v-leaflet-version>
-        <g-leaflet-markercluster-version>${project.version}</g-leaflet-markercluster-version>
+        <g-leaflet-rotatedmarker-version>${project.version}</g-leaflet-rotatedmarker-version>
     </properties>
 
     <organization>
@@ -298,7 +298,7 @@
         <dependency>
             <groupId>org.vaadin.addons</groupId>
             <artifactId>g-leaflet-rotatedmarker</artifactId>
-            <version>1.0.0</version>
+            <version>${g-leaflet-rotatedmarker-version}</version>
             <!-- Only needed during widgetset compilation, so provided scope would 
             be great for this, but with it is left out from widgetset compilation by 
             vaadin plugin -->
