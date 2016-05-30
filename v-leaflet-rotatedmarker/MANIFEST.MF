@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: octavian.marcu
+Build-Jdk: 1.7.0_51
+Implementation-Title: V-Leaflet Rotatedmarker extensions
+Implementation-Version: 1.0.1
+Implementation-Vendor-Id: org.vaadin.addons
+Implementation-Vendor: Vaadin Community
+Vaadin-Package-Version: 1
+Vaadin-Widgetsets: org.vaadin.addon.leaflet.rotatedmarker.Widgetset
+Class-Path: v-leaflet-1.0.0-b5.jar g-leaflet-1.0.0-b4.jar slf4j-api-1.
+ 6.2.jar jts-1.13.jar jackson-databind-2.3.2.jar jackson-annotations-2
+ .3.0.jar jackson-core-2.3.2.jar g-leaflet-rotatedmarker-1.0.1.jar val
+ idation-api-1.0.0.GA.jar validation-api-1.0.0.GA-sources.jar
+
