@@ -162,7 +162,7 @@ public class LeafletRotatedMarkerConnector extends LeafletMarkerConnector {
         }
         String popup = getState().popup;
         if (popup != null) {
-            PopupOptions popupOptions = LeafletPopupConnector.popupOptionsFor(getState().popupState);
+            PopupOptions popupOptions = LeafletPopupConnector.popupOptionsFor(getState().popupState, this);
             rotatedMarker.bindPopup(popup, popupOptions);
         }
 
