@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addons</groupId>
     <artifactId>v-leaflet-rotatedmarker</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <name>V-Leaflet Rotatedmarker extensions</name>
 
     <properties>
