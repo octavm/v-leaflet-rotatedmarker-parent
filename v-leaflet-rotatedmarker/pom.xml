@@ -8,7 +8,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version>7.3.6</vaadin.version>
+        <vaadin.version>7.6.8</vaadin.version>
         <v-leaflet-version>1.0.3</v-leaflet-version>
         <g-leaflet-rotatedmarker-version>${project.version}</g-leaflet-rotatedmarker-version>
     </properties>
@@ -33,8 +33,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -106,7 +106,7 @@
                             <goal>compile</goal>
                         </goals>
                         <configuration>
-                            <skip>true</skip>
+                            <skip>${skipTests}</skip>
                         </configuration>
                     </execution>
                 </executions>
@@ -166,7 +166,7 @@
                         <style>PRETTY</style>
                         <!-- We only need to compile the test widgetset, if not defined gwt 
                         module will also compile the add-on widgetset as well -->
-                        <module>org.vaadin.addon.leaflet.demoandtestapp.TestWidgetset</module>
+                        <module>org.vaadin.addon.leaflet.rotatedmarker.Widgetset</module>
                         <!-- If you do lots of e.g. plain css changes and don't wish to use 
                         hosted mode, you can force compile easily with uncommenting following rule -->
                         <!-- 						<force>true</force> -->
@@ -323,30 +323,13 @@
             <version>${vaadin.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>7.2.2.v20101205</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- If you have testbench licence, use that instead of raw selenium. Much 
-        more robust results -->
 
         <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-testbench</artifactId>
-            <version>3.1.1</version>
+            <groupId>org.vaadin</groupId>
+            <artifactId>addon-test-helpers</artifactId>
+            <version>1.10</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Open source alternative to TestBench -->
-        <!-- <dependency> -->
-        <!-- <groupId>org.seleniumhq.selenium</groupId> -->
-        <!-- <artifactId>selenium-firefox-driver</artifactId> -->
-        <!-- <version>2.25.0</version> -->
-        <!-- <scope>test</scope> -->
-        <!-- </dependency> -->
 
 
         <dependency>
