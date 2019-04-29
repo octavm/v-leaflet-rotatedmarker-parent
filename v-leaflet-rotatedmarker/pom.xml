@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addons</groupId>
     <artifactId>v-leaflet-rotatedmarker</artifactId>
-    <version>1.0.4</version>
+    <version>1.1.0</version>
     <name>V-Leaflet Rotatedmarker extensions</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version>7.6.8</vaadin.version>
-        <v-leaflet-version>1.0.3</v-leaflet-version>
+        <vaadin.version>7.7.9</vaadin.version>
+        <v-leaflet-version>1.1.0</v-leaflet-version>
         <g-leaflet-rotatedmarker-version>${project.version}</g-leaflet-rotatedmarker-version>
     </properties>
 
@@ -106,7 +106,7 @@
                             <goal>compile</goal>
                         </goals>
                         <configuration>
-                            <skip>${skipTests}</skip>
+                            <!--<skip>${skipTests}</skip>-->
                         </configuration>
                     </execution>
                 </executions>
@@ -170,7 +170,7 @@
                         <!-- If you do lots of e.g. plain css changes and don't wish to use 
                         hosted mode, you can force compile easily with uncommenting following rule -->
                         <!-- 						<force>true</force> -->
-                        <strict>true</strict>
+                        <!--<strict>true</strict>-->
                     </configuration>
                 </plugin>
                 <plugin>

@@ -2,6 +2,7 @@ package org.vaadin.addon.leaflet.rotatedmarker;
 
 import org.vaadin.addon.leaflet.LMarker;
 import org.vaadin.addon.leaflet.rotatedmarker.client.LeafletRotatedMarkerState;
+import org.locationtech.jts.geom.Point;
 
 /**
  * <code>LRotatedMarker</code> is a normal <code>LMarker</code> with added possibility to rotate the icon around an origin
@@ -12,7 +13,7 @@ public class LRotatedMarker extends LMarker {
      * Marker with rotated icon
      * @param jtsPoint geographical position of the marker
      */
-    public LRotatedMarker(com.vividsolutions.jts.geom.Point jtsPoint) {
+    public LRotatedMarker(Point jtsPoint) {
         super(jtsPoint);
     }
 

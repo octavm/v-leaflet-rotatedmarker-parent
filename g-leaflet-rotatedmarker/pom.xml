@@ -5,7 +5,7 @@
 	<!-- POM file generated with GWT webAppCreator -->
 	<modelVersion>4.0.0</modelVersion>
 
-	<version>1.0.4</version>
+	<version>1.1.0</version>
 	<groupId>org.vaadin.addons</groupId>
 	<artifactId>g-leaflet-rotatedmarker</artifactId>
 	<packaging>jar</packaging>
@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>org.peimari</groupId>
 			<artifactId>g-leaflet</artifactId>
-			<version>1.0.3</version>
+			<version>1.0.15</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.gwt</groupId>
@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.8.1</version>
+			<version>4.10</version>
 			<scope>test</scope>
 		</dependency>
 
