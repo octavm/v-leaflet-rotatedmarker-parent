@@ -11,6 +11,11 @@
 	<packaging>jar</packaging>
 	<name>g-leaflet-rotatedmarker</name>
 
+	<organization>
+		<name>Vaadin Community</name>
+		<url>http://vaadin.com/forum/</url>
+	</organization>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.peimari</groupId>
